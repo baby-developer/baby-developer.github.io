@@ -61,7 +61,7 @@ button:focus {
   top: 0;
   padding: 1rem;
   width: 100%;
-  background-color: #050a13;
+  background-color: transparent;
 }
 
 .header__logo {
@@ -99,4 +99,49 @@ button:focus {
 .header__menu__item.active {
   border: 1px solid var(--color-accent);
   border-radius: 4px;
+}
+
+/* Home */
+#home {
+  padding: 7rem 1rem 5rem;
+  text-align: center;
+  color: var(--color-text);
+  background-color: var(--color-primary);
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 3px solid var(--color-accent);
+  border-radius: 100%;
+}
+
+.home__title {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.home__title--strong {
+  color: var(--color-accent);
+}
+
+.home__description {
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+}
+
+.home__contact {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  color: var(--color-primary);
+  background-color: var(--color-accent);
+}
+
+.home__contact:hover {
+  outline: 2px solid var(--color-accent);
+  color: var(--color-text);
+  background-color: transparent;
 }
