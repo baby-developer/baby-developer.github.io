@@ -37,19 +37,21 @@
   <body>
     <!-- Header -->
     <!-- 페이지 외부나 페이지 내의 특정한 위치로 이동하는 것 (하이퍼링크): <a> 태그를 사용해야 함 -->
-    <header>
-      <div>
-        <img src="./images/favicon.ico" alt="logo" />
-        <h1><a href="#">Ellie</a></h1>
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__logo__img" src="./images/favicon.ico" alt="logo" />
+        <h1 class="header__logo__title"><a href="#">Ellie</a></h1>
       </div>
       <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About me</a></li>
-          <li><a href="#skills">My Skills</a></li>
-          <li><a href="#work">My work</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="header__menu">
+          <li><a class="header__menu__item active" href="#home">Home</a></li>
+          <li><a class="header__menu__item" href="#about">About</a></li>
+          <li><a class="header__menu__item" href="#skills">Skills</a></li>
+          <li><a class="header__menu__item" href="#work">My work</a></li>
+          <li>
+            <a class="header__menu__item" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="header__menu__item" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>

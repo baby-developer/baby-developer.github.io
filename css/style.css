@@ -21,6 +21,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
 h1,
@@ -49,4 +50,53 @@ button {
 
 button:focus {
   outline: 1px solid var(--color-accent);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding: 1rem;
+  width: 100%;
+  background-color: #050a13;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/*
+  .header__logo img -> 이렇게 쓸 수도 있지만, 성능에 좋지 X
+  따라서 저렇게 CSS 문법을 쓰기보다는 가급적 구체적, 명시적으로 클래스 이름을 지정해서 선택해 주는 게 성능에 더 좋다.
+*/
+.header__logo__img {
+  width: 36px;
+  height: 36px;
+}
+
+.header__logo__title {
+  font-size: 1.8rem;
+}
+
+.header__menu {
+  display: flex;
+  gap: 4px;
+}
+
+.header__menu__item {
+  padding: 8px 16px;
+}
+
+.header__menu__item:hover {
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.header__menu__item.active {
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
 }
