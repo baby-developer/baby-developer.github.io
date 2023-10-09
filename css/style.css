@@ -86,6 +86,7 @@ button:focus {
   padding: 1rem;
   width: 100%;
   background-color: var(--color-primary);
+  z-index: 1;
 }
 
 .header__logo {
@@ -283,4 +284,53 @@ button:focus {
 .bar__value {
   height: 100%;
   background-color: var(--color-accent);
+}
+
+/* Work */
+#work {
+  color: var(--color-text);
+  background-color: var(--color-primary);
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2.5rem 0;
+}
+
+.category {
+  position: relative;
+  padding: 0.5rem 3rem;
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  font-size: 1.1rem;
+  color: var(--color-text);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.category--selected {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+.category--selected .category__count,
+.category:hover .category__count {
+  opacity: 1;
+  top: 0;
+}
+
+.category__count {
+  position: absolute;
+  top: -20px;
+  right: 16px;
+  opacity: 0;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 100%;
+  color: var(--color-text);
+  background-color: var(--color-accent-variant);
+  transition: all 250ms ease-in;
 }
