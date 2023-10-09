@@ -223,3 +223,64 @@ button:focus {
   color: var(--color-primary);
   font-size: 0.8rem;
 }
+
+/* Skills */
+#skills {
+  color: var(--color-text);
+  background-color: var(--color-primary-variant);
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  border-radius: 8px;
+  margin: 2rem 3rem;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.skills__title {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: var(--color-accent);
+}
+
+.skills__coding {
+  grid-row: span 2;
+  padding: 1rem;
+  background-color: var(--color-primary);
+}
+
+.skills__tools {
+  padding: 1rem;
+  background-color: var(--color-primary-variant);
+}
+
+.skills__etc {
+  padding: 1rem;
+  background-color: var(--color-primary);
+  filter: brightness(150%);
+}
+
+.bar {
+  padding: 1rem;
+}
+
+.bar__metadata {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.bar__background {
+  height: 3px;
+  background-color: var(--color-primary-variant);
+}
+
+.bar__value {
+  height: 100%;
+  background-color: var(--color-accent);
+}
