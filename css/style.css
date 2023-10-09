@@ -384,3 +384,38 @@ button:focus {
   transform: translateX(-50%);
   background-color: var(--color-accent);
 }
+
+/* Testimonials */
+.testimonials {
+  margin: 3rem 0;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial:nth-child(even) .testimonial__image {
+  order: 1;
+}
+
+.testimonial__image {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.testimonial__bubble {
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.testimonial__bubble__name {
+  font-weight: 600;
+  color: var(--color-accent);
+  filter: brightness(70%);
+}
