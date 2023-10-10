@@ -52,7 +52,7 @@ button {
 }
 
 button:focus {
-  outline: 1px solid var(--color-accent);
+  outline: 1px solid transparent;
 }
 
 /* Common */
@@ -120,7 +120,9 @@ button:focus {
 }
 
 .header__menu__item {
+  display: block;
   padding: 8px 16px;
+  border-bottom: 1px solid transparent;
 }
 
 .header__menu__item:hover {
@@ -130,6 +132,16 @@ button:focus {
 .header__menu__item.active {
   border: 1px solid var(--color-accent);
   border-radius: 4px;
+}
+
+.header__toggle {
+  display: none;
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--color-white);
+  cursor: pointer;
 }
 
 /* Home */
@@ -467,7 +479,7 @@ button:focus {
 @media screen and (max-width: 768px) {
   /* Common */
   .section {
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
   }
 
   .title {
@@ -482,6 +494,7 @@ button:focus {
   .header {
     flex-direction: column;
     align-items: start;
+    background-color: var(--color-primary);
   }
 
   .header__nav {
@@ -489,10 +502,19 @@ button:focus {
   }
 
   .header__menu {
+    display: none;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem 4rem;
     text-align: center;
+  }
+
+  .header__menu.open {
+    display: flex;
+  }
+
+  .header__toggle {
+    display: block;
   }
 
   /* Home */
