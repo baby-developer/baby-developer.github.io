@@ -438,6 +438,7 @@ button:focus {
   text-align: center;
   background-color: var(--color-primary);
   box-shadow: 5px 5px 0px 0px var(--color-accent);
+  transition: opacity 300ms ease-in;
 }
 
 /* Footer */
